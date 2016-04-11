@@ -1,3 +1,15 @@
+
+<div class="apple_pagination2">
+  <div class="col-xs-10 col-xs-offset-1">
+    <%= page_entries_info @places %> 
+  </div>
+
+  <div class="col-xs-10 col-xs-offset-1">
+    <%= will_paginate @places %>
+  </div>
+</div>
+
+
 <% @places.each do |place| %>
   <div class="booyah-box col-xs-10 col-xs-offset-1">
     <h1><%= place.name %></h1>
@@ -5,3 +17,18 @@
     <p><%= place.description %></p><br />
   </div>
 <% end %>
+<br class="clear"/>
+
+<div class="apple_pagination2">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-5 col-xs-offset-1">
+        <%= page_entries_info @places %> 
+      </div>
+      <div class="col-xs-5", style="text-align:right">
+        <%= will_paginate @places %>  
+      </div>      
+    </div>
+  </div>
+</div>
+
