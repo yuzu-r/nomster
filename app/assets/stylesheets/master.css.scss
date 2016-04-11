@@ -10,6 +10,18 @@
   padding: 20px;
 }
 
+.navbar.navbar-inverse {
+  background: url('/assets/subtle_white_mini_waves.png');
+  border-radius: 0;
+  box-shadow: 0px 1px 3px #2a2a2a;
+}
+
+body {
+  background: url('/assets/subtle_white_mini_waves.png');
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin:0;
   padding:0;
