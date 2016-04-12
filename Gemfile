@@ -16,6 +16,8 @@ gem 'rails_12factor', group: :production
 gem 'will_paginate', '3.0.7'
 gem 'will_paginate-bootstrap', '1.0.1'
 
+gem 'simple_form'
+
 group :doc do
   gem 'sdoc', require: false
 end
