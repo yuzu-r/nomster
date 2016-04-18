@@ -16,6 +16,9 @@
   <div class="booyah-box col-xs-10 col-xs-offset-1">
     <h1><%= link_to place.name, place_path(place) %></h1>
     <i><%= place.address %></i><br /><br />
+    <% if place.photos.present? %>
+      <%= image_tag place.photos.first.picture, class: "img-responsive col-xs-4" %>
+    <% end %>
     <p><%= place.description %></p><br />
     <% if place.user.present? %>
       <small><%= place.user.email %></small>
