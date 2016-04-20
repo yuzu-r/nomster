@@ -2,7 +2,7 @@
   <div class="col-xs-12 col-sm-4">
     <%= image_tag '1461191031_Streamline-99.png' %>
   </div>
-  <div class="col-xs-12 col-sm-8">
+  <div class="col-xs-12 col-sm-8" style="overflow:auto">
     <h1><%= @user.email %></h1>
     <h3>Member since: <%=@user.created_at.strftime("%B %d, %Y") %></h3>
     <h4><%= @user.comments.count %> comments posted. </h4>
