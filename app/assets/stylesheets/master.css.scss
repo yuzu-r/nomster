@@ -16,7 +16,7 @@
 
 .carousel-caption {
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     font-weight:100;
     text-shadow: rgba(0,0,0,0.95) 2px 2px;
     background-color: rgba(0,0,0,0.5);
@@ -26,7 +26,7 @@
 }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    max-height: 550px;
+    max-height: 480px;
     width: 100%;
 }
 
@@ -119,4 +119,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #map {
   height: 300px;
+}
+
+#my-bs-override .navbar-nav > li > a {
+    color: #5C82AB;
 }
