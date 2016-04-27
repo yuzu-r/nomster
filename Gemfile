@@ -11,7 +11,9 @@ gem 'jquery-rails'
 # gem 'turbolinks'   # this is conflicting with maps implentation
 gem 'jbuilder', '~> 1.2'
 
-gem 'rails_12factor', group: :production
+group :production, :localp do 
+  gem 'rails_12factor'
+end
 
 gem 'will_paginate', '3.0.7'
 gem 'will_paginate-bootstrap', '1.0.1'
