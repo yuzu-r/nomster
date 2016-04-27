@@ -12,6 +12,6 @@
 // removing the turbolinks one bc it interferes with maps
 //
 //= require jquery
-//= require bootstrap-sprockets
 //= require jquery_ujs
+//= require bootstrap-sprockets
 //= require_tree .
