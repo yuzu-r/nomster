@@ -27,6 +27,12 @@ gem 'figaro', '>= 1.0.0'
 gem 'carrierwave'
 gem "fog", "~> 1.3.1"
 
+#gem 'puma' #take out later
+
+gem 'rack-mini-profiler'
+gem 'flamegraph'
+gem 'better_errors'
+
 group :doc do
   gem 'sdoc', require: false
 end

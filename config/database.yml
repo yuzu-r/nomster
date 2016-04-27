@@ -61,3 +61,12 @@ production:
   username: postgres
   password: password
   host: localhost
+
+#production-dev:
+#  adapter: postgresql
+#  encoding: unicode
+#  database: nomster_development
+#  pool: 5
+#  username: postgres
+#  password: password
+#  host: localhost
