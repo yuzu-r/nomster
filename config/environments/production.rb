@@ -20,7 +20,9 @@ Nomster::Application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_assets = false
+  # this has to change with Rails 4.2 to avoid a warning on startup in Heroku
+  # config.serve_static_assets = false  # old way
+  config.serve_static_files = false     # new way
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
