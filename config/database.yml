@@ -62,11 +62,3 @@ production:
   password: password
   host: localhost
 
-localp:
-  adapter: postgresql
-  encoding: unicode
-  database: nomster_test
-  pool: 5
-  username: postgres
-  password: password
-  host: localhost

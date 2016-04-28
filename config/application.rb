@@ -25,5 +25,9 @@ module Nomster
 
     # Precompile additional assets
     config.assets.precompile += %w( .svg .eot .woff .ttf .woff2)
+
+    # opting into new rails behavior as suggested by message on startup
+    # (after upgrading to rails 4.2)
+    config.active_record.raise_in_transactional_callbacks = true
   end
 end
