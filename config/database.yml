@@ -65,7 +65,7 @@ production:
 localp:
   adapter: postgresql
   encoding: unicode
-  database: nomster_development
+  database: nomster_test
   pool: 5
   username: postgres
   password: password

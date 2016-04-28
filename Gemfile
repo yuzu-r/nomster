@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.0.1'
+gem 'rails', '4.2.6'
 gem 'pg'
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sprockets', '2.11.0'
@@ -20,14 +20,15 @@ gem 'will_paginate-bootstrap', '1.0.1'
 
 gem 'simple_form'
 
-gem 'devise', '>=3.2.4'
+#gem 'devise', '>=3.2.4'
+gem 'devise', '3.5.8'
 
 gem 'geocoder'
 
 gem 'figaro', '>= 1.0.0'
 
 gem 'carrierwave'
-gem "fog", "~> 1.3.1"
+gem "fog", "1.37.0"
 
 group :doc do
   gem 'sdoc', require: false
