@@ -2,6 +2,23 @@ require 'rails_helper'
 
 RSpec.describe PlacesController, type: :controller do
 
+  describe "places#show action" do
+    it "should show the places detail page" do
+      p = FactoryGirl.create(:place)
+      get :show, id: p.id
+      expect(response).to have_http_status(:success)
+    end
+
+    it "should give a not found if the place is not found" do
+      get :show, id: 'batsu'
+      expect(response).to have_http_status(:not_found)
+    end
+
+    #it "should show comments if there are any" do
+    #end
+
+  end
+
   describe "places#new action" do
     it "should require user to login" do
       get :new

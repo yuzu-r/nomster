@@ -3,6 +3,7 @@ class PlacesController < ApplicationController
 
   def index
     @places= Place.paginate(page: params[:page], per_page: 3)
+    @tagwords = Tagword.all
   end
 
   def new
@@ -19,7 +20,10 @@ class PlacesController < ApplicationController
   end
 
   def show
-    @place=Place.find(params[:id])
+    @place=Place.find_by_id(params[:id])
+    if @place.blank?
+      return render text: 'Not Found', status: :not_found
+    end
     @comment = Comment.new
     @photo = Photo.new
   end
