@@ -1,4 +1,9 @@
 FactoryGirl.define do
+  factory :tagword do
+    sequence :name do |n|
+      "Tag #{n}"
+    end
+  end
   factory :user do
     sequence :email do |n|
       "test_email#{n}@example.com"
