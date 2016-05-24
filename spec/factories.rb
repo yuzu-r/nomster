@@ -1,4 +1,10 @@
 FactoryGirl.define do
+  factory :comment do
+    association :place
+    association :user
+    message "ono!"
+    rating "5_stars"
+  end
   factory :placetag do
     association :tagword
     association :place
