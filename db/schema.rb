@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160524032045) do
+ActiveRecord::Schema.define(version: 20160524041135) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,17 @@ ActiveRecord::Schema.define(version: 20160524032045) do
   end
 
   add_index "places", ["user_id"], name: "index_places_on_user_id", using: :btree
+
+  create_table "placetags", force: :cascade do |t|
+    t.integer  "tagword_id"
+    t.integer  "place_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "placetags", ["place_id"], name: "index_placetags_on_place_id", using: :btree
+  add_index "placetags", ["tagword_id", "place_id"], name: "index_placetags_on_tagword_id_and_place_id", unique: true, using: :btree
+  add_index "placetags", ["tagword_id"], name: "index_placetags_on_tagword_id", using: :btree
 
   create_table "tagwords", force: :cascade do |t|
     t.string   "name"

@@ -1,4 +1,8 @@
 FactoryGirl.define do
+  factory :placetag do
+    association :tagword
+    association :place
+  end
   factory :tagword do
     sequence :name do |n|
       "Tag #{n}"
